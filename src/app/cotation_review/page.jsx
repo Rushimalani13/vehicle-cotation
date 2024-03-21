@@ -5,16 +5,18 @@ import vehicles from '../vehicleapi/vechiledata.json'
 import { Button } from "@/components/ui/button";
 import { useRouter } from 'next/navigation';
 
-const getLocalItem = ()=>{
-  const storelocaltodo= localStorage.getItem("userinfo");
-  return storelocaltodo?JSON.parse(storelocaltodo):[];
-}
-
-function getVehicleById(id) {
-  return vehicles.find(vehicle => vehicle.id === id);
-}
 
 export default function cotation_review() {
+
+  const getLocalItem = ()=>{
+    const storelocaltodo= localStorage.getItem("userinfo");
+    return storelocaltodo?JSON.parse(storelocaltodo):[];
+  }
+  
+  function getVehicleById(id) {
+    return vehicles.find(vehicle => vehicle.id === id);
+  }
+
   const { push } = useRouter();
   const sendCotation = () => {
     alert('Coatation Send Succesfully!!');
