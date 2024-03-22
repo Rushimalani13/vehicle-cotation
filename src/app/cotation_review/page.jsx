@@ -13,12 +13,12 @@ export default function cotation_review() {
   const getLocalItem = ()=>{
     const { userState } = useContext(TodoContext);
 
-    const storelocaltodo= userState;
+    const storelocaltodo= userState===null?[]:userState;
     return storelocaltodo;
  }
 
   function getVehicleById(id) {
-    return vehicles.find(vehicle => vehicle.id === id);
+    return vehicles.find(vehicle => vehicle.id === id)?vehicles.find(vehicle => vehicle.id === id):{};
   }
 
   const { push } = useRouter();
@@ -35,6 +35,7 @@ export default function cotation_review() {
     console.log("Vehicle found:", foundVehicle);
   } else {
     console.log("Vehicle not found with ID:", idToFind);
+    
   }
 
   return (
