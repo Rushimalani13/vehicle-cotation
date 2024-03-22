@@ -19,9 +19,10 @@ import {
   SelectItem,
   Select,
 } from "@/components/ui/select";
-import { useState } from "react";
-import { useRouter } from 'next/navigation';
 
+import { useRouter } from 'next/navigation';
+import { useContext } from "react";
+import { TodoContext } from '@/context/userContext';
 
 const formSchema = z
   .object({
@@ -55,12 +56,11 @@ const formSchema = z
       message: "Model name is required",
       path: ["fourWheelerModel"],
     }
-  )
-  ;
+  );
 
 export default function Home() {
   const { push } = useRouter();
-  const [userState, setUserState] = useState({});
+  const { setUserState } = useContext(TodoContext);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -73,9 +73,10 @@ export default function Home() {
   const vehiclesTypes = form.watch("vehiclesTypes");
 
   const handleSubmit = (values: z.infer<typeof formSchema>) => {
+
     const userdata=values;
+    console.log("data value ",values);
     setUserState(userdata);
-    localStorage.setItem('userinfo',JSON.stringify(userdata));  
     push('/cotation_review');
   };
   

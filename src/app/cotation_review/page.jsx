@@ -4,15 +4,19 @@ import Image from 'next/image'
 import vehicles from '../vehicleapi/vechiledata.json'
 import { Button } from "@/components/ui/button";
 import { useRouter } from 'next/navigation';
+import { useContext } from "react";
+import { TodoContext } from '@/context/userContext';
 
 
 export default function cotation_review() {
 
   const getLocalItem = ()=>{
-    const storelocaltodo= localStorage.getItem("userinfo");
-    return storelocaltodo?JSON.parse(storelocaltodo):[];
-  }
-  
+    const { userState } = useContext(TodoContext);
+
+    const storelocaltodo= userState;
+    return storelocaltodo;
+ }
+
   function getVehicleById(id) {
     return vehicles.find(vehicle => vehicle.id === id);
   }

@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "context/context.jsx", "src/app/cotation_review/page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "context/context.jsx", "src/app/cotation_review/page.tsx", "src/context/userContext.jsx"],
   "exclude": ["node_modules"]
 }
