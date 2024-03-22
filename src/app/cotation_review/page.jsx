@@ -18,7 +18,17 @@ export default function cotation_review() {
  }
 
   function getVehicleById(id) {
-    return vehicles.find(vehicle => vehicle.id === id)?vehicles.find(vehicle => vehicle.id === id):{};
+    return vehicles.find(vehicle => vehicle.id === id)?vehicles.find(vehicle => vehicle.id === id):{
+      "id": "1",
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2019,
+      "color": "Silver",
+      "base":890000,
+      "accessories":20000,
+      "Tax":18000,
+      "imagurl":"https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    };
   }
 
   const { push } = useRouter();
@@ -30,13 +40,6 @@ export default function cotation_review() {
 
   const idToFind = data.vechileModel; 
   const foundVehicle = getVehicleById(idToFind);
-
-  if (foundVehicle) {
-    console.log("Vehicle found:", foundVehicle);
-  } else {
-    console.log("Vehicle not found with ID:", idToFind);
-    
-  }
 
   return (
     <>
