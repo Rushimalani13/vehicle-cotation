@@ -1,47 +1,47 @@
 [
     {
       "id": "1",
-      "make": "Toyota",
-      "model": "Corolla",
+      "make": "Bajaj",
+      "model": "Bajaj Pulsar NS200",
       "year": 2019,
-      "color": "Silver",
-      "base":890000,
+      "color": "White",
+      "base":1890000,
       "accessories":20000,
       "Tax":18000,
-      "imagurl":"https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "imagurl":"https://imgd.aeplcdn.com/1200x900/n/cw/ec/58025/pulsar-ns-right-front-three-quarter-6.jpeg?isig=0"
     },
     {
       "id": "2",
-      "make": "Honda",
-      "model": "Civic",
-      "year": 2020,
+      "make": "TVS",
+      "model": "TVS Apache RTR 160",
+      "year": 2014,
       "color": "Red",
-      "base":190000,
+      "base":119000,
       "accessories":9000,
       "Tax":12000,
-      "imagurl":"https://imgd.aeplcdn.com/1056x594/n/cw/ec/145655/x440-right-front-three-quarter-6.jpeg?isig=0&q=80&wm=3"
+      "imagurl":"https://imgd.aeplcdn.com/664x374/n/cw/ec/1/versions/tvs-apache-160-rm-drum1697706461225.jpg?q=80"
     },
     {
       "id": "3",
-      "make": "Ford",
-      "model": "F-150",
-      "year": 2018,
-      "color": "Black",
-      "base":930000,
-      "accessories":54000,
-      "Tax":83000,
-      "imagurl":"https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "make": "Tata",
+      "model": "Tata Nexon",
+      "year": 2016,
+      "color": "blue",
+      "base":814000,
+      "accessories":154000,
+      "Tax":383000,
+      "imagurl":"https://imgd.aeplcdn.com/664x374/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80"
     },
     {
       "id": "4",
-      "make": "Chevrolet",
-      "model": "Malibu",
-      "year": 2017,
-      "color": "Blue",
-      "base":9120000,
-      "accessories":120000,
-      "Tax":123000,
-      "imagurl":"https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "make": "Maruti",
+      "model": "Maruti Brezza",
+      "year": 2015,
+      "color": "Red",
+      "base":812000,
+      "accessories":140000,
+      "Tax":133000,
+      "imagurl":"https://imgd.aeplcdn.com/664x374/n/cw/ec/107543/brezza-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80"
     }
   ]
   
